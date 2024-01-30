@@ -24,12 +24,13 @@ function closeOrderPopup() {
 }
 
 function submitOrder() {
-  // Implement logic to send order details to WhatsApp
-  let itemName = document.getElementById("item").value;
-  let message = document.getElementById("message").value;
-  let whatsappNumber = "+6285738187967";
-  let whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Order:%20${itemName}%0APertanyaan:%20${message}`;
-
-  // Open WhatsApp link in a new tab
-  window.open(whatsappLink, "_blank");
-}
+    // Implement logic to send order details to WhatsApp
+    let itemName = document.getElementById("item").value;
+    let message = document.getElementById("message").value;
+    let whatsappNumber = "+6285738187967";
+    let whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Order:%20${itemName}%0APertanyaan:%20${message}`;
+  
+    // Open WhatsApp link in a new tab
+    window.open(whatsappLink, "_blank");
+  }
+  
