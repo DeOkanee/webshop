@@ -1,0 +1,90 @@
+/* Popup Style */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.76);
+  background: rgb(255, 255, 255);
+  z-index: 1000;
+  max-width: 400px; /* Atur lebar maksimal pop-up */
+  width: 100%;
+  border-radius: 10px; /* Tambahkan sudut lengkung untuk tampilan yang lebih menarik */
+  overflow: hidden; /* Mencegah konten keluar dari elemen */
+}
+
+.popup-kirim {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.close:hover {
+  color: #ff0000;
+}
+
+/* Form Style */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: calc(100% - 16px);
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#order-form .pesan {
+  color: #333;
+  font-size: 14px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Style untuk menghilangkan garis bawah pada link pada form */
+form a {
+  text-decoration: none;
+  color: #4caf50;
+  border-bottom: 1px solid #4caf50;
+  transition: border-bottom 0.3s;
+}
+
+form a:hover {
+  border-bottom: 1px solid transparent;
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Klontong</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <link rel="stylesheet" href="css/kirim.css" />
+    <link rel="stylesheet" href="css/responsif.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="fixed">
+      <h1>Toko Klontong</h1>
+    </header>
+    <section class="semua">
+      <div class="container">
+        <div class="product fade-in">
+          <img
+            src="https://down-id.img.susercontent.com/file/sg-11134201-7qvco-lha8lg7sgdsb5e"
+            alt="Produk 1"
+          />
+
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name" id="productName1">Nama Barang 1</h3>
+              <div class="price-toggle" onclick="togglePrice(this)">
+                <i class="fas fa-eye" style="float: left; margin-right: 8px">
+                  &nbsp;&nbsp;<span>Rp</span></i
+                >
+                <p class="price" style="display: none; float: right">50.000</p>
+              </div>
+            </div>
+            <div class="button-group">
+              <button
+                class="order-btn"
+                onclick="showOrderPopup('productName1', 80000)"
+              >
+                Order
+              </button>
+              <button
+                class="additional-btn"
+                onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product fade-in">
+          <img src="img/gambar2.png" alt="Produk 2" />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name" id="productName2">Nama Barang 2</h3>
+              <div class="price-toggle" onclick="togglePrice(this)">
+                <i class="fas fa-eye" style="float: left; margin-right: 8px"
+                  >&nbsp;&nbsp;<span>Rp</span></i
+                >
+                <p class="price" style="display: none; float: right">25.000</p>
+              </div>
+            </div>
+            <div class="button-group">
+              <button
+                class="order-btn"
+                onclick="showOrderPopup('productName2', 80000)"
+              >
+                Order
+              </button>
+              <button
+                class="additional-btn"
+                onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product fade-in">
+          <img src="img/gambar3.png" alt="Produk 3" />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name" id="productName3">Nama Barang 3</h3>
+              <div class="price-toggle" onclick="togglePrice(this)">
+                <i class="fas fa-eye" style="float: left; margin-right: 8px"
+                  >&nbsp;&nbsp;<span>Rp</span></i
+                >
+                <p class="price" style="display: none; float: right">30.000</p>
+              </div>
+            </div>
+            <div class="button-group">
+              <button
+                class="order-btn"
+                onclick="showOrderPopup('productName3', 80000)"
+              >
+                Order
+              </button>
+              <button
+                class="additional-btn"
+                onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product fade-in">
+          <img src="img/gambar4.png" alt="Produk 4" />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name" id="productName4">Nama Barang 4</h3>
+              <div class="price-toggle" onclick="togglePrice(this)">
+                <i class="fas fa-eye" style="float: left; margin-right: 8px"
+                  >&nbsp;&nbsp;<span>Rp</span></i
+                >
+                <p class="price" style="display: none; float: right">45.000</p>
+              </div>
+            </div>
+            <div class="button-group">
+              <button
+                class="order-btn"
+                onclick="showOrderPopup('productName4', 80000)"
+              >
+                Order
+              </button>
+              <button
+                class="additional-btn"
+                onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product fade-in">
+          <img src="img/gambar2.png" alt="Produk 5" />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name" id="productName5">Nama Barang 5</h3>
+              <div class="price-toggle" onclick="togglePrice(this)">
+                <i class="fas fa-eye" style="float: left; margin-right: 8px"
+                  >&nbsp;&nbsp;<span>Rp</span></i
+                >
+                <p class="price" style="display: none; float: right">60.000</p>
+              </div>
+            </div>
+            <div class="button-group">
+              <button
+                class="order-btn"
+                onclick="showOrderPopup('productName5', 80000)"
+              >
+                Order
+              </button>
+              <button
+                class="additional-btn"
+                onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product fade-in">
+          <img src="img/gambar3.png" alt="Produk 6" />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name" id="productName6">Nama Barang 6</h3>
+              <div class="price-toggle" onclick="togglePrice(this)">
+                <i class="fas fa-eye" style="float: left; margin-right: 8px"
+                  >&nbsp;&nbsp;<span>Rp</span></i
+                >
+                <p class="price" style="display: none; float: right">55.000</p>
+              </div>
+            </div>
+            <div class="button-group">
+              <button
+                class="order-btn"
+                onclick="showOrderPopup('productName6', 80000)"
+              >
+                Order
+              </button>
+              <button
+                class="additional-btn"
+                onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product fade-in">
+          <img src="img/gambar4.png" alt="Produk 7" />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name" id="productName7">Nama Barang 7</h3>
+              <div class="price-toggle" onclick="togglePrice(this)">
+                <i class="fas fa-eye" style="float: left; margin-right: 8px"
+                  >&nbsp;&nbsp;<span>Rp</span></i
+                >
+                <p class="price" style="display: none; float: right">75.000</p>
+              </div>
+            </div>
+            <div class="button-group">
+              <button
+                class="order-btn"
+                onclick="showOrderPopup('productName7', 80000)"
+              >
+                Order
+              </button>
+              <button
+                class="additional-btn"
+                onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product fade-in">
+          <img src="img/gambar4.png" alt="Produk 8" />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name" id="productName8">Baju hudi</h3>
+              <div class="price-toggle" onclick="togglePrice(this)">
+                <i class="fas fa-eye" style="float: left; margin-right: 8px"
+                  >&nbsp;&nbsp;<span>Rp</span></i
+                >
+                <p class="price" style="display: none; float: right">80.000</p>
+              </div>
+            </div>
+            <div class="button-group">
+              <button
+                class="order-btn"
+                onclick="showOrderPopup('productName8', 80000)"
+              >
+                Order
+              </button>
+              <button
+                class="additional-btn"
+                onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="order-popup" class="popup">
+        <div class="popup-kirim">
+          <span class="close" onclick="closeOrderPopup()">&times;</span>
+
+          <h2>Order</h2>
+          <form id="order-form">
+            <label for="item">Nama Barang:</label>
+            <input type="text" id="item" name="item" readonly />
+            <input type="hidden" id="item-price" name="item-price" readonly />
+
+            <label for="message">Pertanyaan:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tulis pertanyaan Anda..."
+            ></textarea>
+            <p class="pesan">Ini Akan Dikirimkan Kepada Penjual</p>
+            <button type="button" onclick="submitOrder()">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="popup-container" id="popupContainer">
+        <div class="popup-content">
+          <img id="popupImage" alt="Popup Image" />
+          <p id="popupDescription"></p>
+          <ul id="popupDescriptionList"></ul>
+          <button onclick="hidePopup()">Tutup</button>
+        </div>
+      </div>
+    </section>
+    <script src="JS/kirim.js"></script>
+    <script src="JS/animasi.js"></script>
+    <script src="JS/header.js"></script>
+
+    <script>
+      function togglePrice(element) {
+        var priceElement = element.querySelector(".price");
+        var eyeIcon = element.querySelector(".fa-eye");
+
+        if (priceElement.style.display === "none") {
+          priceElement.style.display = "block";
+          eyeIcon.classList.remove("fa-eye");
+          eyeIcon.classList.add("fa-eye-slash");
+        } else {
+          priceElement.style.display = "none";
+          eyeIcon.classList.remove("fa-eye-slash");
+          eyeIcon.classList.add("fa-eye");
+        }
+      }
+      // ... (kode sebelumnya) ...
+      function showPopup(imageSrc, productName, descriptionList) {
+        var popupContainer = document.getElementById("popupContainer");
+        var popupImage = document.getElementById("popupImage");
+        var popupDescription = document.getElementById("popupDescription");
+        var popupDescriptionList = document.getElementById(
+          "popupDescriptionList"
+        );
+
+        popupImage.src = imageSrc;
+        popupDescription.textContent = productName;
+
+        // Menghapus elemen dalam daftar sebelum menambahkan yang baru
+        while (popupDescriptionList.firstChild) {
+          popupDescriptionList.removeChild(popupDescriptionList.firstChild);
+        }
+
+        // Membuat elemen <li> untuk setiap deskripsi dan menambahkannya ke daftar
+        descriptionList.forEach(function (desc) {
+          var listItem = document.createElement("li");
+          listItem.textContent = desc;
+          popupDescriptionList.appendChild(listItem);
+        });
+
+        popupContainer.style.display = "flex";
+      }
+
+      function hidePopup() {
+        var popupContainer = document.getElementById("popupContainer");
+        popupContainer.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

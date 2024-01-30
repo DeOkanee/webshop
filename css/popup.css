@@ -1,0 +1,64 @@
+.popup-container {
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    overflow: hidden; /* Menyembunyikan overflow jika kontennya terlalu panjang */
+}
+
+#popupImage {
+    max-width: 100%;
+    max-height: 400px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#popupDescription {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#popupDescriptionList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-left: 30px;
+}
+
+#popupDescriptionList li {
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.popup-content button {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.popup-content button:hover {
+    background-color: #e66913;
+}

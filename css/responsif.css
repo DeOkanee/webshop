@@ -1,0 +1,53 @@
+@media (max-width: 567px) {
+  header.fixed {
+    padding: 5px; /* Mengurangi padding untuk header di perangkat seluler */
+  }
+
+  header.fixed h1 {
+    font-size: 16px; /* Mengurangi ukuran font pada header di perangkat seluler */
+  }
+
+  .container {
+    margin: 20px auto; /* Mengurangi margin pada container di perangkat seluler */
+    margin-top: 20%; /* Mengurangi margin atas pada container di perangkat seluler */
+    padding: 0 10px; /* Mengurangi padding kanan dan kiri pada container di perangkat seluler */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Mengubah jumlah kolom pada grid di perangkat seluler */
+    gap: 10px 10px; /* Mengurangi jarak antara kartu di perangkat seluler */
+  }
+
+  .product {
+    margin-bottom: 20px; /* Menambah margin bawah pada setiap kartu di perangkat seluler */
+  }
+
+  .product img {
+    width: 85%; /* Mengatur lebar gambar agar sesuai dengan lebar kartu di perangkat seluler */
+    border-radius: 0; /* Menghapus border-radius pada gambar di perangkat seluler */
+  }
+
+  .product-header {
+    flex-direction: column-reverse; /* Menukar urutan flex direction di perangkat seluler */
+  }
+
+  .price-toggle {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px; /* Mengurangi margin bawah pada price toggle di perangkat seluler */
+  }
+  .product-name {
+    font-size: 18px;
+  }
+  .button-group {
+    padding: 0 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .order-btn,
+  .additional-btn {
+    padding: 9px 1px;
+    width: 40%;
+  }
+}
