@@ -7,7 +7,7 @@ window.onscroll = function() {
     if (prevScrollPos > currentScrollPos) {
         header.style.top = "0";
     } else {
-        header.style.top = "-10px"; /* Sesuaikan dengan tinggi header Anda */
+        header.style.top = "0"; /* Sesuaikan dengan tinggi header Anda */
     }
 
     prevScrollPos = currentScrollPos;
