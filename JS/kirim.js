@@ -25,6 +25,6 @@ function submitOrder() {
   const itemPrice = document.getElementById("item-price").value;
   const message = document.getElementById("message").value;
   const whatsappNumber = "+6285738187967";
-  const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Order:%20${itemName}%20Harga:%20${itemPrice}%0APertanyaan:%20${message}`;
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Order:%20${itemName}%0AHarga:%20${itemPrice}%0APertanyaan:%20${message}`;
   window.open(whatsappLink, "_blank");
 }
