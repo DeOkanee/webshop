@@ -40,7 +40,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName1', 80000)"
+                onclick="showOrderPopup('productName1', '50.000')"
               >
                 Order
               </button>
@@ -69,7 +69,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName2', 80000)"
+                onclick="showOrderPopup('productName2', '25.000')"
               >
                 Order
               </button>
@@ -98,7 +98,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName3', 80000)"
+                onclick="showOrderPopup('productName3', '30.000')"
               >
                 Order
               </button>
@@ -127,7 +127,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName4', 80000)"
+                onclick="showOrderPopup('productName4', '45.000')"
               >
                 Order
               </button>
@@ -156,7 +156,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName5', 80000)"
+                onclick="showOrderPopup('productName5', '60.000')"
               >
                 Order
               </button>
@@ -185,7 +185,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName6', 80000)"
+                onclick="showOrderPopup('productName6', '55.000')"
               >
                 Order
               </button>
@@ -214,7 +214,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName7', 80000)"
+                onclick="showOrderPopup('productName7', '75.000')"
               >
                 Order
               </button>
@@ -243,7 +243,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName8', 80000)"
+                onclick="showOrderPopup('productName8', '80.000')"
               >
                 Order
               </button>
@@ -258,29 +258,33 @@
         </div>
       </div>
     </section>
-    <section>
-      <div id="order-popup" class="popup">
-        <div class="popup-kirim">
-          <span class="close" onclick="closeOrderPopup()">&times;</span>
-
-          <h2>Order</h2>
-          <form id="order-form">
-            <label for="item">Barang:</label>
-            <input type="text" id="item" name="item" readonly />
-            <input type="hidden" id="item-price" name="item-price" readonly />
-
-            <label for="message">Pertanyaan:</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Tulis pertanyaan Anda..."
-            ></textarea>
-            <p class="pesan">Pertanyaan Akan Dikirimkan Kepada Penjual</p>
-            <button type="button" onclick="submitOrder()">Kirim</button>
-          </form>
+      <section>
+        <div id="order-popup" class="popup">
+          <div class="popup-kirim">
+            <span class="close" onclick="closeOrderPopup()">&times;</span>
+      
+            <h2>Order</h2>
+            <form id="order-form">
+              <label for="item">Barang:</label>
+              <input type="text" id="item" name="item" readonly />
+      
+              <!-- Tambahkan label dan input harga di bawah label barang -->
+              <label for="item-price">Harga:</label>
+              <input type="text" id="item-price" name="item-price" readonly />
+      
+              <label for="message">Pertanyaan:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tulis pertanyaan Anda..."
+              ></textarea>
+              <p class="pesan">Pertanyaan Akan Dikirimkan Kepada Penjual</p>
+              <button type="button" onclick="submitOrder()">Kirim</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
 
     <section>
       <div class="popup-container" id="popupContainer">

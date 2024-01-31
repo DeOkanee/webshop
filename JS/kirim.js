@@ -1,36 +1,30 @@
 function togglePrice(element) {
-  // Implement toggle logic for price display
+  const priceElement = element.querySelector('.price');
+  priceElement.style.display = priceElement.style.display === 'none' ? 'block' : 'none';
 }
 
-function showPopup(image, itemName, itemDescription) {
-  // Implement logic to show detail popup
-}
+function showOrderPopup(productNameId, productPrice) {
+  // Tampilkan popup order
+  const orderPopup = document.getElementById("order-popup");
+  orderPopup.style.display = "block";
 
-function showOrderPopup(productNameId, itemPrice) {
-  // Show the order popup
-  document.getElementById("order-popup").style.display = "block";
+  // Set nama barang di dalam input field
+  const itemName = document.getElementById(productNameId).innerText;
+  document.getElementById("item").value = itemName;
 
-  // Set the item name in the input field
-  document.getElementById("item").value =
-    document.getElementById(productNameId).innerText;
-
-  // Set the item price in the input field (optional)
-  document.getElementById("item-price").value = `Rp${itemPrice}`;
+  // Set harga barang di dalam input field
+  document.getElementById("item-price").value = productPrice;
 }
 
 function closeOrderPopup() {
-  // Close the order popup
   document.getElementById("order-popup").style.display = "none";
 }
 
 function submitOrder() {
-    // Implement logic to send order details to WhatsApp
-    let itemName = document.getElementById("item").value;
-    let message = document.getElementById("message").value;
-    let whatsappNumber = "+6285738187967";
-    let whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Order:%20${itemName}%0APertanyaan:%20${message}`;
-  
-    // Open WhatsApp link in a new tab
-    window.open(whatsappLink, "_blank");
-  }
-  
+  const itemName = document.getElementById("item").value;
+  const itemPrice = document.getElementById("item-price").value;
+  const message = document.getElementById("message").value;
+  const whatsappNumber = "+6285738187967";
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Order:%20${itemName}%20Harga:%20${itemPrice}%0APertanyaan:%20${message}`;
+  window.open(whatsappLink, "_blank");
+}
