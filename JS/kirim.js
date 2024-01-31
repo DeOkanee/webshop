@@ -3,7 +3,9 @@ function togglePrice(element) {
   priceElement.style.display = priceElement.style.display === 'none' ? 'block' : 'none';
 }
 
-function showOrderPopup(productNameId, productPrice) {
+let selectedProductImage; // Variabel global untuk menyimpan gambar produk
+
+function showOrderPopup(productNameId, productPrice, productImage) {
   // Tampilkan popup order
   const orderPopup = document.getElementById("order-popup");
   orderPopup.style.display = "block";
@@ -14,8 +16,10 @@ function showOrderPopup(productNameId, productPrice) {
 
   // Set harga barang di dalam input field
   document.getElementById("item-price").value = productPrice;
-}
 
+  // Simpan gambar produk ke dalam variabel global
+  selectedProductImage = productImage;
+}
 function closeOrderPopup() {
   document.getElementById("order-popup").style.display = "none";
 }
@@ -25,6 +29,10 @@ function submitOrder() {
   const itemPrice = document.getElementById("item-price").value;
   const message = document.getElementById("message").value;
   const whatsappNumber = "+6285738187967";
-  const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Order:%20${itemName}%0AHarga:%20${itemPrice}%0APertanyaan:%20${message}`;
+  
+  // Sertakan gambar produk dalam link WhatsApp
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Order:%20${itemName}%0AHarga:%20${itemPrice}%0AGambar Produk:%20${selectedProductImage}%0APertanyaan:%20${message}`;
+  
   window.open(whatsappLink, "_blank");
 }
+

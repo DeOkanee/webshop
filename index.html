@@ -19,13 +19,10 @@
     <header class="fixed">
       <h1>Toko Klontong</h1>
     </header>
-    <section class="semua">
+    <section>
       <div class="container">
         <div class="product fade-in">
-          <img
-            src="img/gambar1.png"
-            alt="Produk 1"
-          />
+          <img id="product-image1" src="https://i.ibb.co/GRYMwK8/63e57050-0ab5-4821-8284-0ba34010d352.png" alt="Produk 1" />
 
           <div class="product-info">
             <div class="product-header">
@@ -38,12 +35,14 @@
               </div>
             </div>
             <div class="button-group">
+              <!-- Contoh pada satu tombol -->
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName1', '50.000')"
+                onclick="showOrderPopup('productName1', '50.000', 'https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
+
               <button
                 class="additional-btn"
                 onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
@@ -55,7 +54,7 @@
         </div>
 
         <div class="product fade-in">
-          <img src="img/gambar2.png" alt="Produk 2" />
+          <img id="product-image2" src="img/gambar2.png" alt="Produk 2" />
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName2">Selimut</h3>
@@ -69,7 +68,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName2', '25.000')"
+                onclick="showOrderPopup('productName2', '25.000','https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
@@ -84,7 +83,7 @@
         </div>
 
         <div class="product fade-in">
-          <img src="img/gambar3.png" alt="Produk 3" />
+          <img id="product-image3" src="img/gambar3.png" alt="Produk 3" />
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName3">Sarung</h3>
@@ -98,13 +97,13 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName3', '30.000')"
+                onclick="showOrderPopup('productName3', '30.000', 'https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
               <button
                 class="additional-btn"
-                onclick="showPopup('img/gambar1.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+                onclick="showPopup('img/gambar3.png', 'Sandal', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
               >
                 Detail
               </button>
@@ -113,7 +112,7 @@
         </div>
 
         <div class="product fade-in">
-          <img src="img/gambar4.png" alt="Produk 4" />
+          <img id="product-image4" src="img/gambar4.png" alt="Produk 4" />
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName4">Kemeja</h3>
@@ -127,7 +126,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName4', '45.000')"
+                onclick="showOrderPopup('productName4', '45.000', 'https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
@@ -142,7 +141,7 @@
         </div>
 
         <div class="product fade-in">
-          <img src="img/gambar2.png" alt="Produk 5" />
+          <img id="product-image5" src="img/gambar2.png" alt="Produk 5" />
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName5">Celana</h3>
@@ -156,7 +155,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName5', '60.000')"
+                onclick="showOrderPopup('productName5', '60.000', 'https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
@@ -171,7 +170,7 @@
         </div>
 
         <div class="product fade-in">
-          <img src="img/gambar3.png" alt="Produk 6" />
+          <img id="product-image6" src="img/gambar3.png" alt="Produk 6" />
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName6">Kaos</h3>
@@ -185,7 +184,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName6', '55.000')"
+                onclick="showOrderPopup('productName6', '55.000', 'https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
@@ -200,7 +199,7 @@
         </div>
 
         <div class="product fade-in">
-          <img src="img/gambar4.png" alt="Produk 7" />
+          <img id="product-image7" src="img/gambar4.png" alt="Produk 7" />
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName7">Sendal</h3>
@@ -214,7 +213,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName7', '75.000')"
+                onclick="showOrderPopup('productName7', '75.000', 'https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
@@ -229,7 +228,7 @@
         </div>
 
         <div class="product fade-in">
-          <img src="img/gambar4.png" alt="Produk 8" />
+          <img id="product-image8" src="img/gambar4.png" alt="Produk 8" />
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName8">Baju hudi</h3>
@@ -243,7 +242,7 @@
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName8', '80.000')"
+                onclick="showOrderPopup('productName8', '80.000', 'https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
@@ -258,33 +257,32 @@
         </div>
       </div>
     </section>
-      <section>
-        <div id="order-popup" class="popup">
-          <div class="popup-kirim">
-            <span class="close" onclick="closeOrderPopup()">&times;</span>
-      
-            <h2>Order</h2>
-            <form id="order-form">
-              <label for="item">Barang:</label>
-              <input type="text" id="item" name="item" readonly />
-      
-              <!-- Tambahkan label dan input harga di bawah label barang -->
-              <label for="item-price">Harga:</label>
-              <input type="text" id="item-price" name="item-price" readonly />
-      
-              <label for="message">Pertanyaan:</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tulis pertanyaan Anda..."
-              ></textarea>
-              <p class="pesan">Pertanyaan Akan Dikirimkan Kepada Penjual</p>
-              <button type="button" onclick="submitOrder()">Kirim</button>
-            </form>
-          </div>
+    <section>
+      <div id="order-popup" class="popup">
+        <div class="popup-kirim">
+          <span class="close" onclick="closeOrderPopup()">&times;</span>
+
+          <h2>Order</h2>
+          <form id="order-form">
+            <label for="item">Barang:</label>
+            <input type="text" id="item" name="item" readonly />
+
+            <!-- Tambahkan label dan input harga di bawah label barang -->
+            <label for="item-price">Harga:</label>
+            <input type="text" id="item-price" name="item-price" readonly />
+
+            <label for="message">Pertanyaan:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tulis pertanyaan Anda..."
+            ></textarea>
+            <p class="pesan">Pertanyaan Akan Dikirimkan Kepada Penjual</p>
+            <button type="button" onclick="submitOrder()">Kirim</button>
+          </form>
         </div>
-      </section>
-      
+      </div>
+    </section>
 
     <section>
       <div class="popup-container" id="popupContainer">
