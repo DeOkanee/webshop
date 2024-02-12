@@ -64,6 +64,9 @@ textarea {
 textarea {
   resize: vertical;
 }
+#item {
+  word-wrap: break-word;
+}
 
 #order-form .pesan {
   color: #333;

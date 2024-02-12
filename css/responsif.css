@@ -1,3 +1,16 @@
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+  }
+  .product-name {
+    font-size: 14px;
+    max-width: 140px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+  }
+}
+
+
 @media (max-width: 567px) {
   header.fixed {
     padding: 5px; /* Mengurangi padding untuk header di perangkat seluler */
@@ -8,9 +21,9 @@
   }
 
   .container {
-    margin: 20px auto; /* Mengurangi margin pada container di perangkat seluler */
-    margin-top: 20%; /* Mengurangi margin atas pada container di perangkat seluler */
-    padding: 0 10px; /* Mengurangi padding kanan dan kiri pada container di perangkat seluler */
+    margin: 5px auto; /* Mengurangi margin pada container di perangkat seluler */
+    margin-top: 16%; /* Mengurangi margin atas pada container di perangkat seluler */
+    padding: 0 5px; /* Mengurangi padding kanan dan kiri pada container di perangkat seluler */
     grid-template-columns: repeat(
       2,
       1fr
@@ -18,12 +31,8 @@
     gap: 10px 10px; /* Mengurangi jarak antara kartu di perangkat seluler */
   }
 
-  .product {
-    margin-bottom: 20px; /* Menambah margin bawah pada setiap kartu di perangkat seluler */
-  }
-
   .product img {
-    width: 85%; /* Mengatur lebar gambar agar sesuai dengan lebar kartu di perangkat seluler */
+    width: 100%; /* Mengatur lebar gambar agar sesuai dengan lebar kartu di perangkat seluler */
     border-radius: 0; /* Menghapus border-radius pada gambar di perangkat seluler */
   }
 
@@ -37,7 +46,8 @@
     margin-bottom: 5px; /* Mengurangi margin bawah pada price toggle di perangkat seluler */
   }
   .product-name {
-    font-size: 18px;
+    font-size: 10px;
+    max-width: 140px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
   }
   .button-group {
     padding: 0 15px;
