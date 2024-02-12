@@ -46,7 +46,7 @@
     margin-bottom: 5px; /* Mengurangi margin bawah pada price toggle di perangkat seluler */
   }
   .product-name {
-    font-size: 10px;
+    font-size: 14px;
     max-width: 140px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
   }
   .button-group {
