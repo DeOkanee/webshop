@@ -1,5 +1,5 @@
 /* Responsive Media Queries */
-@media (max-width: 900px){
+@media (max-width: 900px) {
   .container {
     margin: 5px auto; /* Mengurangi margin pada container di perangkat seluler */
     margin-top: 9%; /* Mengurangi margin atas pada container di perangkat seluler */
@@ -10,20 +10,15 @@
     ); /* Mengubah jumlah kolom pada grid di perangkat seluler */
     gap: 10px 10px; /* Mengurangi jarak antara kartu di perangkat seluler */
   }
-  .product-header{
-    margin-top: 9px;
-  }
-  .product-name {
-    margin-bottom: 10px;
-    margin: 0 10px;
-  
+  .product-header h3 {
+    font-size: 1rem; /* Sesuaikan ukuran font */
+    max-width: 160px;
   }
   .price-toggle {
-    margin: 0 10px;
     font-size: 15px;
     margin-bottom: 5px; /* Mengurangi margin bawah pada price toggle di perangkat seluler */
   }
-  .button-group button{
+  .button-group button {
     font-size: 14px;
     padding: 9px 13px;
   }
@@ -39,13 +34,15 @@
     ); /* Mengubah jumlah kolom pada grid di perangkat seluler */
     gap: 10px 10px; /* Mengurangi jarak antara kartu di perangkat seluler */
   }
-
+  .product-header h3 {
+    font-size: 1rem; /* Sesuaikan ukuran font */
+    max-width: 150px;
+  }
   .price-toggle {
-    margin: 0 10px;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 5px; /* Mengurangi margin bawah pada price toggle di perangkat seluler */
   }
-  .button-group button{
+  .button-group button {
     font-size: 13px;
     padding: 7px 13px;
   }
@@ -68,32 +65,47 @@
     border-radius: 0; /* Menghapus border-radius pada gambar di perangkat seluler */
   }
 
-  .product-header {
-    margin-top: 10px;
-    flex-direction: column; /* Menukar urutan flex direction di perangkat seluler */
-  }
 
+  .product-header h3 {
+    font-size: 0.9rem; /* Sesuaikan ukuran font */
+    max-width: 130px; /* Sesuaikan max-width untuk layar yang lebih kecil */
+    margin-bottom: 1px;
+  }
   .price-toggle {
-    margin: 0 10px;
     font-size: 13px;
+    margin-top: 7px;
     margin-bottom: 5px; /* Mengurangi margin bawah pada price toggle di perangkat seluler */
   }
-  .product-name {
-    margin-bottom: 1px;
-   
-  }
+
   .button-group {
     padding: 0 15px;
     align-items: center;
     text-align: center;
     bottom: 0;
     display: flex;
-     justify-content: space-between; /* Atur ruang antara tombol */
+    justify-content: space-between; /* Atur ruang antara tombol */
   }
 
   .order-btn,
   .additional-btn {
     padding: 9px 1px;
     width: 40%;
+  }
+}
+@media (max-width: 340px){
+  .container {
+    margin: 5px auto; /* Mengurangi margin pada container di perangkat seluler */
+    margin-top: 16%; /* Mengurangi margin atas pada container di perangkat seluler */
+    padding: 0 5px; /* Mengurangi padding kanan dan kiri pada container di perangkat seluler */
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Mengubah jumlah kolom pada grid di perangkat seluler */
+    gap: 10px 10px; /* Mengurangi jarak antara kartu di perangkat seluler */
+  }
+  .product-header h3 {
+    font-size: 0.9rem; /* Sesuaikan ukuran font */
+    max-width: 180px; /* Sesuaikan max-width untuk layar yang lebih kecil */
+    margin-bottom: 1px;
   }
 }

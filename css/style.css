@@ -31,7 +31,7 @@ body {
   height: auto;
   object-fit: cover;
   margin: 0 auto;
-  aspect-ratio: 1/1; 
+  aspect-ratio: 1/1;
 }
 
 .fade-in {
@@ -42,41 +42,25 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 24px;
+  padding-left: 15px;
 }
 
 .product-header h3 {
-  margin: 10px 15px 7px; /* Atur margin atas, kanan, dan bawah */
+  
   text-align: left;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   white-space: nowrap; /* Mencegah teks untuk berjajar ke baris baru */
   overflow: hidden; /* Menghilangkan teks yang berlebihan */
   text-overflow: ellipsis; /* Menambahkan titik-titik untuk teks yang terpotong */
   font-size: 1rem; /* Ukuran font relatif */
-  max-width: 200px; /* Batasi lebar teks */
-
-  /* Responsive Media Queries */
-  @media (max-width: 900px) {
-    font-size: 1.1rem; /* Sesuaikan ukuran font */
-    max-width: 160px; /* Sesuaikan max-width untuk layar yang lebih kecil */
-  }
-
-  @media (max-width: 600px) {
-    font-size: 0.9rem; /* Sesuaikan ukuran font */
-    max-width: 120px; /* Sesuaikan max-width untuk layar yang lebih kecil */
-  }
-
-  @media (max-width: 440px) {
-    font-size: 0.9rem; /* Sesuaikan ukuran font */
-    max-width: 120px; /* Sesuaikan max-width untuk layar yang lebih kecil */
-  }
+  max-width: 7%; /* Batasi lebar teks */
 }
 
-
 .price-toggle {
-  margin-bottom: 15px;
   display: flex;
-  margin: 0 15px;
+  margin-bottom: 10px;
+  margin-top: -10px;
 }
 
 .price-toggle span {
