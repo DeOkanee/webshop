@@ -26,7 +26,7 @@
 @media (max-width: 600px) {
   .container {
     margin: 5px auto; /* Mengurangi margin pada container di perangkat seluler */
-    margin-top: 12%; /* Mengurangi margin atas pada container di perangkat seluler */
+    margin-top: 15%; /* Mengurangi margin atas pada container di perangkat seluler */
     padding: 0 5px; /* Mengurangi padding kanan dan kiri pada container di perangkat seluler */
     grid-template-columns: repeat(
       2,
@@ -51,7 +51,7 @@
 @media (max-width: 440px) {
   .container {
     margin: 5px auto; /* Mengurangi margin pada container di perangkat seluler */
-    margin-top: 16%; /* Mengurangi margin atas pada container di perangkat seluler */
+    margin-top: 17%; /* Mengurangi margin atas pada container di perangkat seluler */
     padding: 0 5px; /* Mengurangi padding kanan dan kiri pada container di perangkat seluler */
     grid-template-columns: repeat(
       2,
