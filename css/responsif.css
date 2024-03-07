@@ -34,7 +34,7 @@
     margin-top: 12%; /* Mengurangi margin atas pada container di perangkat seluler */
     padding: 0 5px; /* Mengurangi padding kanan dan kiri pada container di perangkat seluler */
     grid-template-columns: repeat(
-      3,
+      2,
       1fr
     ); /* Mengubah jumlah kolom pada grid di perangkat seluler */
     gap: 10px 10px; /* Mengurangi jarak antara kartu di perangkat seluler */
