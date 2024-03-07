@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toko Klontong</title>
+    <title>DeShop</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/popup.css" />
     <link rel="stylesheet" href="css/kirim.css" />
     <link rel="stylesheet" href="css/responsif.css" />
-
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -16,36 +18,46 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header class="fixed">
-      <h1>Toko Klontong</h1>
+    <header>
+      <div class="header">
+        <h1>Deshop</h1>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <div class="dropdown">
+            <a class="dropdown-toggle" onclick="toggleDropdown()"
+              >Kategori</a
+            >
+            <div id="kategoriDropdown" class="dropdown-content">
+              <a href="baju.html">Baju</a>
+              <a href="celana.html">Celana</a>
+            </div>
+          </div>
+          <a href="#" onclick="scrollToFooter()">Contact</a>
+        </nav>
+      </div>
     </header>
     <section>
       <div class="container">
         <div class="product fade-in">
-          <img id="product-image1" src="https://i.ibb.co/GRYMwK8/63e57050-0ab5-4821-8284-0ba34010d352.png" alt="Produk 1" />
-
+          <img id="product-image2" src="img/1234.jpg" alt="Produk 2" />
           <div class="product-info">
             <div class="product-header">
-              <h3 class="product-name" id="productName1">Jual Celana Panjang Wanita Model & Jual Celana Panjang Wanita Model & Desain</h3>
-              <div class="price-toggle" onclick="togglePrice(this)">
-                <i class="fas fa-eye" style="float: left; margin-right: 8px">
-                  &nbsp;&nbsp;<span>Rp</span></i
-                >
-                <p class="price" style="display: none; float: right">50.000</p>
+              <h3 class="product-name" id="productName2">Selimut Dalam contoh ini, tombol akan ditempatkan di bawah </h3>
+              <div class="price-toggle">
+                <span>Rp.&nbsp;</span>
+                <p class="price">10.000</p>
               </div>
             </div>
             <div class="button-group">
-              <!-- Contoh pada satu tombol -->
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName1', '50.000', 'https://ibb.co/gJqW15f')"
+                onclick="showOrderPopup('productName2', '25.000','https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
-
               <button
                 class="additional-btn"
-                onclick="showPopup('img/gambar1.png', 'Jual Celana Panjang Wanita Model & Jual Celana Panjang Wanita Model & Desain', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
+                onclick="showPopup('img/gambar1.png', 'Selimut Dalam contoh ini, tombol akan ditempatkan di bawah ', ['berbahan dasar kain woll', 'Deskripsi 2', 'Deskripsi 3'])"
               >
                 Detail
               </button>
@@ -58,11 +70,9 @@
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName2">Selimut</h3>
-              <div class="price-toggle" onclick="togglePrice(this)">
-                <i class="fas fa-eye" style="float: left; margin-right: 8px"
-                  >&nbsp;&nbsp;<span>Rp</span></i
-                >
-                <p class="price" style="display: none; float: right">25.000</p>
+              <div class="price-toggle">
+                <span>Rp.&nbsp;</span>
+                <p class="price">10.000</p>
               </div>
             </div>
             <div class="button-group">
@@ -87,11 +97,9 @@
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName3">Sarung</h3>
-              <div class="price-toggle" onclick="togglePrice(this)">
-                <i class="fas fa-eye" style="float: left; margin-right: 8px"
-                  >&nbsp;&nbsp;<span>Rp</span></i
-                >
-                <p class="price" style="display: none; float: right">30.000</p>
+              <div class="price-toggle">
+                <span>Rp.&nbsp;</span>
+                <p class="price">50.000</p>
               </div>
             </div>
             <div class="button-group">
@@ -112,21 +120,19 @@
         </div>
 
         <div class="product fade-in">
-          <img id="product-image4" src="img/gambar4.png" alt="Produk 4" />
+          <img id="product-image2" src="img/gambar2.png" alt="Produk 2" />
           <div class="product-info">
             <div class="product-header">
-              <h3 class="product-name" id="productName4">Kemeja</h3>
-              <div class="price-toggle" onclick="togglePrice(this)">
-                <i class="fas fa-eye" style="float: left; margin-right: 8px"
-                  >&nbsp;&nbsp;<span>Rp</span></i
-                >
-                <p class="price" style="display: none; float: right">45.000</p>
+              <h3 class="product-name" id="productName2">Selimut</h3>
+              <div class="price-toggle">
+                <span>Rp.&nbsp;</span>
+                <p class="price">10.000</p>
               </div>
             </div>
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName4', '45.000', 'https://ibb.co/gJqW15f')"
+                onclick="showOrderPopup('productName2', '25.000','https://ibb.co/gJqW15f')"
               >
                 Order
               </button>
@@ -145,11 +151,9 @@
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName5">Celana</h3>
-              <div class="price-toggle" onclick="togglePrice(this)">
-                <i class="fas fa-eye" style="float: left; margin-right: 8px"
-                  >&nbsp;&nbsp;<span>Rp</span></i
-                >
-                <p class="price" style="display: none; float: right">60.000</p>
+              <div class="price-toggle">
+                <span>Rp.&nbsp;</span>
+                <p class="price">50.000</p>
               </div>
             </div>
             <div class="button-group">
@@ -174,11 +178,9 @@
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName6">Kaos</h3>
-              <div class="price-toggle" onclick="togglePrice(this)">
-                <i class="fas fa-eye" style="float: left; margin-right: 8px"
-                  >&nbsp;&nbsp;<span>Rp</span></i
-                >
-                <p class="price" style="display: none; float: right">55.000</p>
+              <div class="price-toggle">
+                <span>Rp.&nbsp;</span>
+                <p class="price">50.000</p>
               </div>
             </div>
             <div class="button-group">
@@ -203,11 +205,9 @@
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName7">Sendal</h3>
-              <div class="price-toggle" onclick="togglePrice(this)">
-                <i class="fas fa-eye" style="float: left; margin-right: 8px"
-                  >&nbsp;&nbsp;<span>Rp</span></i
-                >
-                <p class="price" style="display: none; float: right">75.000</p>
+              <div class="price-toggle">
+                <span>Rp.&nbsp;</span>
+                <p class="price">50.000</p>
               </div>
             </div>
             <div class="button-group">
@@ -232,11 +232,9 @@
           <div class="product-info">
             <div class="product-header">
               <h3 class="product-name" id="productName8">Baju hudi</h3>
-              <div class="price-toggle" onclick="togglePrice(this)">
-                <i class="fas fa-eye" style="float: left; margin-right: 8px"
-                  >&nbsp;&nbsp;<span>Rp</span></i
-                >
-                <p class="price" style="display: none; float: right">80.000</p>
+              <div class="price-toggle">
+                <span>Rp.&nbsp;</span>
+                <p class="price">50.000</p>
               </div>
             </div>
             <div class="button-group">
@@ -294,25 +292,56 @@
         </div>
       </div>
     </section>
+    <!--contact person-->
+    <section id="Contact" style="display: none">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/wwwxx013@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="jurusan">Nomor WhatsApp:</label>
+            <input type="text" id="jurusan" name="jurusan" />
+          </div>
+          <div class="form-group">
+            <label for="question">Kirim Pertanyaan:</label>
+            <textarea id="question" name="question" rows="4"></textarea>
+          </div>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+      <div class="bawah">
+        <div class="footer-left">
+          <p><a href="link_anda_di_sini">&copy; DeShop 2024</a></p>
+        </div>
+        <div class="footer-right">
+          <nav>
+            <ul>
+              <ul>
+                <li>
+                  <a onclick="toggleContactSection()">Contact Person</a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!--JS-->
     <script src="JS/kirim.js"></script>
     <script src="JS/animasi.js"></script>
     <script src="JS/header.js"></script>
 
     <script>
-      function togglePrice(element) {
-        var priceElement = element.querySelector(".price");
-        var eyeIcon = element.querySelector(".fa-eye");
-
-        if (priceElement.style.display === "none") {
-          priceElement.style.display = "block";
-          eyeIcon.classList.remove("fa-eye");
-          eyeIcon.classList.add("fa-eye-slash");
-        } else {
-          priceElement.style.display = "none";
-          eyeIcon.classList.remove("fa-eye-slash");
-          eyeIcon.classList.add("fa-eye");
-        }
-      }
       // ... (kode sebelumnya) ...
       function showPopup(imageSrc, productName, descriptionList) {
         var popupContainer = document.getElementById("popupContainer");

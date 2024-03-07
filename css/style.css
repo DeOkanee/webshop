@@ -5,33 +5,13 @@ body {
   background-color: #2c2c2c;
 }
 
-header.fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #ff6f2c;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  box-shadow: 0 10px 9px rgba(0, 0, 0, 0.342);
-  z-index: 999;
-  transition: top 0.3s;
-}
-.fixed h1 {
-  font-size: 20px;
-  animation-name: inherit;
-}
-header.fixed:hover {
-  top: 0;
-}
-
 .container {
   margin: 70px auto;
-  margin-top: 8%;
+  margin-top: 7%;
   padding: 0 28px; /* Tambahkan padding kanan dan kiri */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px 30px; /* Jarak antara kartu */
+  gap: 20px 20px; /* Jarak antara kartu */
 }
 
 .product {
@@ -51,8 +31,7 @@ header.fixed:hover {
   height: auto;
   object-fit: cover;
   margin: 0 auto;
-
-
+  aspect-ratio: 1/1; 
 }
 
 .fade-in {
@@ -63,34 +42,45 @@ header.fixed:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 2px;
+  margin-bottom: 24px;
 }
 
-.product-name {
-  margin: 0;
-  margin-top: 10px;
-  margin-bottom: 7px;
+.product-header h3 {
+  margin: 10px 15px 7px; /* Atur margin atas, kanan, dan bawah */
   text-align: left;
-  padding: 0 10px;
-  font-size: 15px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 250px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  white-space: nowrap; /* Mencegah teks untuk berjajar ke baris baru */
+  overflow: hidden; /* Menghilangkan teks yang berlebihan */
+  text-overflow: ellipsis; /* Menambahkan titik-titik untuk teks yang terpotong */
+  font-size: 1rem; /* Ukuran font relatif */
+  max-width: 200px; /* Batasi lebar teks */
+
+  /* Responsive Media Queries */
+  @media (max-width: 900px) {
+    font-size: 1.1rem; /* Sesuaikan ukuran font */
+    max-width: 160px; /* Sesuaikan max-width untuk layar yang lebih kecil */
+  }
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem; /* Sesuaikan ukuran font */
+    max-width: 120px; /* Sesuaikan max-width untuk layar yang lebih kecil */
+  }
+
+  @media (max-width: 440px) {
+    font-size: 0.9rem; /* Sesuaikan ukuran font */
+    max-width: 120px; /* Sesuaikan max-width untuk layar yang lebih kecil */
+  }
 }
+
 
 .price-toggle {
-
-  padding: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: flex;
-  cursor: pointer;
-  margin-left: 13px;
+  margin: 0 15px;
 }
 
-.price-toggle i span {
-  font-family: "Times New Roman", Times, serif;
+.price-toggle span {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .product-info .button-group {
@@ -131,4 +121,3 @@ header.fixed:hover {
 .additional-btn:hover {
   background: linear-gradient(to right, #e4c126, #13e6b8);
 }
-
