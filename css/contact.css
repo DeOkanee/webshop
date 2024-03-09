@@ -1,4 +1,9 @@
 /* contact person */
+@media (max-width: 600px) {
+  .form-semua {
+    margin: 30px 10px 20px;
+  }
+}
 @media (max-width: 440px) {
   .form-semua {
     margin: 30px 10px 20px;
