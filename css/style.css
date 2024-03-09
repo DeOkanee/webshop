@@ -54,7 +54,7 @@ body {
   overflow: hidden; /* Menghilangkan teks yang berlebihan */
   text-overflow: ellipsis; /* Menambahkan titik-titik untuk teks yang terpotong */
   font-size: 1rem; /* Ukuran font relatif */
-  max-width: 7%; /* Batasi lebar teks */
+  max-width: 200px; /* Batasi lebar teks */
 }
 
 .price-toggle {

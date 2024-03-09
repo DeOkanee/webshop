@@ -28,7 +28,7 @@ function submitOrder() {
   const itemName = encodeURIComponent(document.getElementById("item").value);
   const itemPrice = encodeURIComponent(document.getElementById("item-price").value);
   const message = encodeURIComponent(document.getElementById("message").value);
-  const whatsappNumber = "+6285738187967";
+  const whatsappNumber = "+6281236091001";
   
   // Sertakan gambar produk dalam link WhatsApp
   const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Order:%20${itemName}%0AHarga:%20${itemPrice}%0AGambar%20Produk:%20${selectedProductImage}%0APertanyaan:%20${message}`;
