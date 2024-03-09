@@ -20,17 +20,19 @@
   <body>
     <header>
       <div class="header">
-        <h1>Celana</h1>
+        <h1>Deshop</h1>
         <nav class="nav-links">
           <div class="dropdown">
             <a class="dropdown-toggle" onclick="toggleDropdown()">Kategori</a>
             <div id="kategoriDropdown" class="dropdown-content">
-              <a href="index.html">Semua</a>
+              <a href="index.html">Deshop</a>
               <a href="baju.html">Baju</a>
               <a href="celana.html">Celana</a>
             </div>
           </div>
-          <a href="#" onclick="scrollToFooter()">Contact</a>
+          <a href="#" onclick="scrollToFooter(),toggleContactSection()"
+            >Contact</a
+          >
         </nav>
       </div>
     </header>
@@ -45,13 +47,13 @@
               </h3>
               <div class="price-toggle">
                 <span>Rp.&nbsp;</span>
-                <p class="price">10.000</p>
+                <p class="price">25.000</p>
               </div>
             </div>
             <div class="button-group">
               <button
                 class="order-btn"
-                onclick="showOrderPopup('productName2', '25.000','https://ibb.co/gJqW15f')"
+                onclick="showOrderPopup('productName2', '25.000','img/1234.jpg')"
               >
                 Order
               </button>
@@ -293,42 +295,53 @@
       </div>
     </section>
     <!--contact person-->
-    <section id="Contact" style="display: none">
-      <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="https://formsubmit.co/wwwxx013@gmail.com" method="POST">
-          <div class="form-group">
-            <label for="name">Nama Lengkap:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="jurusan">Nomor WhatsApp:</label>
-            <input type="text" id="jurusan" name="jurusan" />
-          </div>
-          <div class="form-group">
-            <label for="question">Kirim Pertanyaan:</label>
-            <textarea id="question" name="question" rows="4"></textarea>
-          </div>
-          <button type="submit">Kirim</button>
-        </form>
-      </div>
+    <section class="form-semua" id="Contact" style="display: none">
+      <form
+        class="form"
+        action="https://formsubmit.co/wwwxx013@gmail.com"
+        method="POST"
+      >
+        <p class="title">Contact Admin DeShop</p>
+        <div class="flex">
+          <label>
+            <input required="" placeholder="" type="text" name="Firstname" class="input" />
+            <span>Firstname</span>
+          </label>
+
+          <label>
+            <input required="" placeholder="" type="text" name="Lastname" class="input" />
+            <span>Lastname</span>
+          </label>
+        </div>
+
+        <label>
+          <input required="" placeholder="" type="email" name="email" class="input" />
+          <span>Email</span>
+        </label>
+
+        <label>
+          <textarea required="" placeholder="" name="question" class="input"></textarea>
+          <span style="display: block; top: 4px;">Pertanyaan</span>
+        </label>
+        <p class="mesege">Terkirim ke Email</p>
+        <button class="submit" type="submit">Submit</button>
+      </form>
     </section>
     <!--FOOTER-->
     <footer>
       <div class="bawah">
         <div class="footer-left">
-          <p><a href="link_anda_di_sini">&copy; DeShop 2024</a></p>
+          <p><a>&copy; DeShop 2024</a></p>
         </div>
         <div class="footer-right">
           <nav>
             <ul>
               <ul>
                 <li>
-                  <a onclick="toggleContactSection()">Contact Person</a>
+                  <a href="#">Chat Admin WA</a>
+                </li>
+                <li>
+                  <a href="#">Tentang Kami</a>
                 </li>
               </ul>
             </ul>
@@ -342,6 +355,26 @@
     <script src="JS/header.js"></script>
 
     <script>
+      // Menampilkan pesan terkirim ke email
+      document.querySelector(".submit").addEventListener("click", function () {
+        // Cek apakah semua input telah diisi
+        var allInputsFilled = true;
+        document.querySelectorAll(".input").forEach(function (input) {
+          if (!input.value.trim()) {
+            allInputsFilled = false;
+          }
+        });
+
+        // Jika semua input telah diisi, munculkan pesan
+        if (allInputsFilled) {
+          document.querySelector(".mesege").style.display = "block";
+
+          // Menghilangkan pesan setelah 5 detik
+          setTimeout(function () {
+            document.querySelector(".mesege").style.display = "none";
+          }, 5000);
+        }
+      });
       // ... (kode sebelumnya) ...
       function showPopup(imageSrc, productName, descriptionList) {
         var popupContainer = document.getElementById("popupContainer");
